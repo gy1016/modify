@@ -7,8 +7,10 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# TODO copy assets and shaders into debugger
+
 # *.x can not be used in add_executable() and add_custom_command()
-file(GLOB SOURCES libs/*.c main.cpp)
+file(GLOB SOURCES libs/*.c core/*.cpp main.cpp)
 
 # Include header files here, don't need to add into add_executable()
 include_directories(includes)
